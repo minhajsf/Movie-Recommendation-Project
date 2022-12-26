@@ -1,0 +1,12 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="the <= 2.5\ngini = 0.5\nsamples = 8\nvalue = [4, 4]\nclass = bad"] ;
+1 [label="professor <= 0.5\ngini = 0.32\nsamples = 5\nvalue = [1, 4]\nclass = good"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="gini = 0.0\nsamples = 4\nvalue = [0, 4]\nclass = good"] ;
+1 -> 2 ;
+3 [label="gini = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = bad"] ;
+1 -> 3 ;
+4 [label="gini = 0.0\nsamples = 3\nvalue = [3, 0]\nclass = bad"] ;
+0 -> 4 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}
